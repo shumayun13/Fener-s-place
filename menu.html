@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurdish Dishes - Fener's Place</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <div class="logo">Fener's Place</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="page-title">
+    <h1>Kurdish Dishes</h1>
+    <p>Served with your choice of rice or savar where listed. Prices do not include HST.</p>
+  </section>
+
+  <section class="menu-grid">
+
+    <article class="menu-item">
+<img src="images/goshte.jpg" alt="Goshte">
+
+      <div class="menu-content">
+        <h3>Goshte</h3>
+        <p>Slices of beef with tomatoes, onions, and green peppers. Served with rice or savar.</p>
+        <p class="price">$21.99</p>
+      <button onclick="addItem('Goshte', 21.99)">Add</button>
+      </div>
+    </article>
+
+    <article class="menu-item">
+      <div>
+        <h3>Goshte - Family Size</h3>
+        <p>Large family size portion.</p>
+        <p class="price">$77.99</p>
+      </div>
+      <button onclick="addItem('Goshte - Family Size', 77.99)">Add</button>
+    </article>
+
+    <article class="menu-item">
+<img src="images/Mirishk.jpg" alt="Mirishk">
+      <div>
+        <h3>Mirishk</h3>
+        <p>Seasoned chicken leg and thigh with roasted potatoes and salad in olive oil, sumac, and mint.</p>
+        <p class="price">$21.99</p>
+
+      <button onclick="addItem('Mirishk', 21.99)">Add</button>
+      </div>
+    </article>
+
+    <article class="menu-item">
+      <div>
+        <h3>Mirishk - Family Size</h3>
+        <p>Large family size portion.</p>
+        <p class="price">$77.99</p>
+      </div>
+      <button onclick="addItem('Mirishk - Family Size', 77.99)">Add</button>
+    </article>
+
+    <article class="menu-item">
+<img src="images/Turshek.jpg" alt="Turshek">
+      <div>
+        <h3>Turshek</h3>
+        <p>Roasted eggplants, tomatoes, green peppers, onions, and potatoes with garlic and spice mix. Served with rice or savar.</p>
+        <p class="price">$21.99</p>
+
+      <button onclick="addItem('Turshek', 21.99)">Add</button>
+      </div>
+    </article>
+
+    <article class="menu-item">
+      <div>
+        <h3>Turshek - Family Size</h3>
+        <p>Large family size portion.</p>
+        <p class="price">$77.99</p>
+      </div>
+      <button onclick="addItem('Turshek - Family Size', 77.99)">Add</button>
+    </article>
+
+    <article class="menu-item">
+<img src="images/Berx.jpg" alt="Berx">
+      <div>
+        <h3>Berx</h3>
+        <p>Soft lamb with onions, mushrooms, and green peppers. Spicy available. Served with rice or savar.</p>
+        <p class="price">$26.99</p>
+
+      <button onclick="addItem('Berx', 26.99)">Add</button>
+      </div>
+    </article>
+
+    <article class="menu-item">
+      <div>
+        <h3>Berx - Family Size</h3>
+        <p>Large family size portion.</p>
+        <p class="price">$104.99</p>
+      </div>
+      <button onclick="addItem('Berx - Family Size', 104.99)">Add</button>
+    </article>
+
+  </section>
+
+  <section class="order-box">
+    <h2>Your Order</h2>
+    <ul id="orderList"></ul>
+    <p id="total">Total: $0.00</p>
+
+    <label for="customerName">Name</label>
+    <input id="customerName" type="text" placeholder="Your name">
+
+    <label for="orderNotes">Order Notes</label>
+    <textarea id="orderNotes" placeholder="Example: rice instead of savar, mild spice, pickup time"></textarea>
+
+    <button class="button" onclick="sendWhatsApp()">Order via WhatsApp</button>
+  </section>
+</main>
+
+<footer>
+  <p>Please inform us of dietary restrictions before ordering.</p>
+</footer>
+</body>
+</html>
